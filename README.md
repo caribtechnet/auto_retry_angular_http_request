@@ -1,0 +1,1 @@
+# auto_retry_angular_http_request
