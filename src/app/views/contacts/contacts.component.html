@@ -1,0 +1,28 @@
+<div class="row">
+  <section class="container">
+    <button (click)="Clear()" class="btn btn-primary">Clear</button>
+    <textarea id="messages" class="form-control">{{message}}</textarea>
+  </section>
+</div>
+<section class="table container">
+  <section class="table_body">
+    <section class="table_row row" *ngFor="let i = index; let _contact of Contacts">
+      <div class="col">{{_contact.id}}</div>
+      <div class="col">{{_contact.first_name}}</div>
+      <div class="col">{{_contact.last_name}}</div>
+      <div class="col">{{_contact.email}}</div>
+      <div class="col">{{_contact.gender}}</div>
+      <div class="col">{{_contact.ip_address}}</div>
+    </section>
+  </section>
+  <section class="row">
+    <div class="col">
+      <button (click)="FetchData()" class="btn btn-primary">Fetch 3 Records </button>
+      <button (click)="Retry3()" class="btn btn-primary">retry 3</button>
+      <button (click)="RetryWhen()" class="btn btn-primary">retry when</button>
+    </div>
+  </section>  
+</section>
+
+
+

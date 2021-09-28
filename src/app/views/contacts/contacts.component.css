@@ -1,0 +1,18 @@
+table{display:flex;}
+button {
+  margin: 1em;
+}
+
+textarea#messages {
+  height: 333px;
+  min-height: 333px;
+  width: 550px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+section.table_body {
+  height: 200px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
